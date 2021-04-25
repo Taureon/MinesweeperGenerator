@@ -1,0 +1,2 @@
+# MinesweeperGenerator
+Generates minesweeper map

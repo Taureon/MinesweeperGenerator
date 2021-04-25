@@ -1,5 +1,5 @@
 # Minesweeper Map Generator
-Generates minesweeper map as a 2d array
+Generates a minesweeper map as a 2d array
 ```js
 const generate = require('./file_location/generator.js');
 

@@ -8,14 +8,8 @@ module.exports = (width = 9, height = 6, mines = 15) => {
     while (mines > (width * height) / 2) mines = Math.floor(mines / 2);
 
     //generate empty map
-    var map = [];
-    for (var j = 0; j < width; j++) {
-        var line = [];
-        for (var k = 0; k < height; k++) {
-            line.push(0);
-        }
-        map.push(line);
-    }
+    var temp = ()=>Array(height).fill(0);
+    var map = Array(width).fill(temp).map(f => f());
 
     //spawn mines
     var x = 0,

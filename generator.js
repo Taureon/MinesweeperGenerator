@@ -18,9 +18,7 @@ module.exports = (width = 9, height = 6, mines = 15) => {
     while (i < mines) {
         x = Math.floor(Math.random() * width);
         y = Math.floor(Math.random() * height);
-        //commented-out part makes sure there are no mines at the top left 2x2 square
-        //i added that because this file is ripped from my discord bot and it uses spoilers to hide mines
-        if (!map[x][y] /*&& !(x < 2 && y < 2)*/) {
+        if (!map[x][y]) {
             i++;
             map[x][y] = -1;
         }
